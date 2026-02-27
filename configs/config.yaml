@@ -1,0 +1,13 @@
+train:
+  target_column: SalePrice
+  id_column: Id
+  validation_size: 0.2
+  random_state: 42
+  model_type: random_forest
+
+paths:
+  train_csv: data/raw/train.csv
+  test_csv: data/raw/test.csv
+  model_output: artifacts/model.joblib
+  metrics_output: artifacts/metrics.json
+  predictions_output: artifacts/submission.csv
